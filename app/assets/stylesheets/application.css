@@ -1,4 +1,6 @@
-@import "bootstrap";
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 body {
   padding-top: 5rem;
