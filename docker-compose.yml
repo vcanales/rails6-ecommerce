@@ -1,0 +1,14 @@
+version: '3'
+volumes:
+  postgres:
+services:
+  db:
+    image: 'postgres:11-alpine'
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: rails-store
+      POSTGRES_PASSWORD: rails-store
+      POSTGRES_DB: rails-store_development
+    volumes:
+      - postgres:/var/lib/postgres
